@@ -1,0 +1,545 @@
+{
+  "stats": [
+    {
+      "id": "requests",
+      "label": "Requests Today",
+      "value": "52,381",
+      "delta": "+12.4%",
+      "direction": "up",
+      "hint": "Global request volume across production regions"
+    },
+    {
+      "id": "failures",
+      "label": "Failures Detected",
+      "value": "1,428",
+      "delta": "-4.2%",
+      "direction": "down",
+      "hint": "Drift, auth, payload, and transient edge failures"
+    },
+    {
+      "id": "healed",
+      "label": "Auto-Healed",
+      "value": "1,173",
+      "delta": "+9.8%",
+      "direction": "up",
+      "hint": "Requests repaired without operator intervention"
+    },
+    {
+      "id": "success",
+      "label": "Success Rate",
+      "value": "82.1%",
+      "delta": "+3.1 pts",
+      "direction": "up",
+      "hint": "Adaptive policy win rate on detected failures"
+    },
+    {
+      "id": "hours",
+      "label": "Hours Saved",
+      "value": "314h",
+      "delta": "+27h",
+      "direction": "up",
+      "hint": "Estimated incident-response time reclaimed"
+    }
+  ],
+  "requests_series": [
+    {
+      "id": "requests",
+      "label": "Requests",
+      "color": "#7c3aed",
+      "points": [
+        {
+          "timestamp": "2026-04-24T15:49:36+00:00",
+          "value": 1505
+        },
+        {
+          "timestamp": "2026-04-24T16:49:36+00:00",
+          "value": 1549
+        },
+        {
+          "timestamp": "2026-04-24T17:49:36+00:00",
+          "value": 1671
+        },
+        {
+          "timestamp": "2026-04-24T18:49:36+00:00",
+          "value": 1843
+        },
+        {
+          "timestamp": "2026-04-24T19:49:36+00:00",
+          "value": 1835
+        },
+        {
+          "timestamp": "2026-04-24T20:49:36+00:00",
+          "value": 1918
+        },
+        {
+          "timestamp": "2026-04-24T21:49:36+00:00",
+          "value": 1879
+        },
+        {
+          "timestamp": "2026-04-24T22:49:36+00:00",
+          "value": 1800
+        },
+        {
+          "timestamp": "2026-04-24T23:49:36+00:00",
+          "value": 1668
+        },
+        {
+          "timestamp": "2026-04-25T00:49:36+00:00",
+          "value": 1568
+        },
+        {
+          "timestamp": "2026-04-25T01:49:36+00:00",
+          "value": 1490
+        },
+        {
+          "timestamp": "2026-04-25T02:49:36+00:00",
+          "value": 1345
+        },
+        {
+          "timestamp": "2026-04-25T03:49:36+00:00",
+          "value": 1228
+        },
+        {
+          "timestamp": "2026-04-25T04:49:36+00:00",
+          "value": 1217
+        },
+        {
+          "timestamp": "2026-04-25T05:49:36+00:00",
+          "value": 1185
+        },
+        {
+          "timestamp": "2026-04-25T06:49:36+00:00",
+          "value": 1059
+        },
+        {
+          "timestamp": "2026-04-25T07:49:36+00:00",
+          "value": 1123
+        },
+        {
+          "timestamp": "2026-04-25T08:49:36+00:00",
+          "value": 1267
+        },
+        {
+          "timestamp": "2026-04-25T09:49:36+00:00",
+          "value": 1435
+        },
+        {
+          "timestamp": "2026-04-25T10:49:36+00:00",
+          "value": 1521
+        },
+        {
+          "timestamp": "2026-04-25T11:49:36+00:00",
+          "value": 1669
+        },
+        {
+          "timestamp": "2026-04-25T12:49:36+00:00",
+          "value": 1753
+        },
+        {
+          "timestamp": "2026-04-25T13:49:36+00:00",
+          "value": 1815
+        },
+        {
+          "timestamp": "2026-04-25T14:49:36+00:00",
+          "value": 1905
+        }
+      ]
+    },
+    {
+      "id": "failures",
+      "label": "Failures",
+      "color": "#f97316",
+      "points": [
+        {
+          "timestamp": "2026-04-24T15:49:36+00:00",
+          "value": 48
+        },
+        {
+          "timestamp": "2026-04-24T16:49:36+00:00",
+          "value": 47
+        },
+        {
+          "timestamp": "2026-04-24T17:49:36+00:00",
+          "value": 52
+        },
+        {
+          "timestamp": "2026-04-24T18:49:36+00:00",
+          "value": 51
+        },
+        {
+          "timestamp": "2026-04-24T19:49:36+00:00",
+          "value": 50
+        },
+        {
+          "timestamp": "2026-04-24T20:49:36+00:00",
+          "value": 55
+        },
+        {
+          "timestamp": "2026-04-24T21:49:36+00:00",
+          "value": 51
+        },
+        {
+          "timestamp": "2026-04-24T22:49:36+00:00",
+          "value": 49
+        },
+        {
+          "timestamp": "2026-04-24T23:49:36+00:00",
+          "value": 50
+        },
+        {
+          "timestamp": "2026-04-25T00:49:36+00:00",
+          "value": 56
+        },
+        {
+          "timestamp": "2026-04-25T01:49:36+00:00",
+          "value": 49
+        },
+        {
+          "timestamp": "2026-04-25T02:49:36+00:00",
+          "value": 46
+        },
+        {
+          "timestamp": "2026-04-25T03:49:36+00:00",
+          "value": 45
+        },
+        {
+          "timestamp": "2026-04-25T04:49:36+00:00",
+          "value": 51
+        },
+        {
+          "timestamp": "2026-04-25T05:49:36+00:00",
+          "value": 46
+        },
+        {
+          "timestamp": "2026-04-25T06:49:36+00:00",
+          "value": 38
+        },
+        {
+          "timestamp": "2026-04-25T07:49:36+00:00",
+          "value": 41
+        },
+        {
+          "timestamp": "2026-04-25T08:49:36+00:00",
+          "value": 33
+        },
+        {
+          "timestamp": "2026-04-25T09:49:36+00:00",
+          "value": 32
+        },
+        {
+          "timestamp": "2026-04-25T10:49:36+00:00",
+          "value": 32
+        },
+        {
+          "timestamp": "2026-04-25T11:49:36+00:00",
+          "value": 29
+        },
+        {
+          "timestamp": "2026-04-25T12:49:36+00:00",
+          "value": 32
+        },
+        {
+          "timestamp": "2026-04-25T13:49:36+00:00",
+          "value": 27
+        },
+        {
+          "timestamp": "2026-04-25T14:49:36+00:00",
+          "value": 35
+        }
+      ]
+    }
+  ],
+  "success_series": [
+    {
+      "id": "heal_rate",
+      "label": "Auto-heal rate",
+      "color": "#14b8a6",
+      "points": [
+        {
+          "timestamp": "2026-04-24T15:49:36+00:00",
+          "value": 78.87
+        },
+        {
+          "timestamp": "2026-04-24T16:49:36+00:00",
+          "value": 78.28
+        },
+        {
+          "timestamp": "2026-04-24T17:49:36+00:00",
+          "value": 78.87
+        },
+        {
+          "timestamp": "2026-04-24T18:49:36+00:00",
+          "value": 78.74
+        },
+        {
+          "timestamp": "2026-04-24T19:49:36+00:00",
+          "value": 79.15
+        },
+        {
+          "timestamp": "2026-04-24T20:49:36+00:00",
+          "value": 79.14
+        },
+        {
+          "timestamp": "2026-04-24T21:49:36+00:00",
+          "value": 79.94
+        },
+        {
+          "timestamp": "2026-04-24T22:49:36+00:00",
+          "value": 80.32
+        },
+        {
+          "timestamp": "2026-04-24T23:49:36+00:00",
+          "value": 80.03
+        },
+        {
+          "timestamp": "2026-04-25T00:49:36+00:00",
+          "value": 80.4
+        },
+        {
+          "timestamp": "2026-04-25T01:49:36+00:00",
+          "value": 80.33
+        },
+        {
+          "timestamp": "2026-04-25T02:49:36+00:00",
+          "value": 81.34
+        },
+        {
+          "timestamp": "2026-04-25T03:49:36+00:00",
+          "value": 81.41
+        },
+        {
+          "timestamp": "2026-04-25T04:49:36+00:00",
+          "value": 81.25
+        },
+        {
+          "timestamp": "2026-04-25T05:49:36+00:00",
+          "value": 81.9
+        },
+        {
+          "timestamp": "2026-04-25T06:49:36+00:00",
+          "value": 82.27
+        },
+        {
+          "timestamp": "2026-04-25T07:49:36+00:00",
+          "value": 81.94
+        },
+        {
+          "timestamp": "2026-04-25T08:49:36+00:00",
+          "value": 81.89
+        },
+        {
+          "timestamp": "2026-04-25T09:49:36+00:00",
+          "value": 83.02
+        },
+        {
+          "timestamp": "2026-04-25T10:49:36+00:00",
+          "value": 83.36
+        },
+        {
+          "timestamp": "2026-04-25T11:49:36+00:00",
+          "value": 82.65
+        },
+        {
+          "timestamp": "2026-04-25T12:49:36+00:00",
+          "value": 83.01
+        },
+        {
+          "timestamp": "2026-04-25T13:49:36+00:00",
+          "value": 83.76
+        },
+        {
+          "timestamp": "2026-04-25T14:49:36+00:00",
+          "value": 84.06
+        }
+      ]
+    }
+  ],
+  "reward_series": [
+    {
+      "id": "reward",
+      "label": "Reward score",
+      "color": "#38bdf8",
+      "points": [
+        {
+          "timestamp": "2026-04-24T15:49:36+00:00",
+          "value": 0.62
+        },
+        {
+          "timestamp": "2026-04-24T16:49:36+00:00",
+          "value": 0.634
+        },
+        {
+          "timestamp": "2026-04-24T17:49:36+00:00",
+          "value": 0.647
+        },
+        {
+          "timestamp": "2026-04-24T18:49:36+00:00",
+          "value": 0.66
+        },
+        {
+          "timestamp": "2026-04-24T19:49:36+00:00",
+          "value": 0.672
+        },
+        {
+          "timestamp": "2026-04-24T20:49:36+00:00",
+          "value": 0.683
+        },
+        {
+          "timestamp": "2026-04-24T21:49:36+00:00",
+          "value": 0.692
+        },
+        {
+          "timestamp": "2026-04-24T22:49:36+00:00",
+          "value": 0.701
+        },
+        {
+          "timestamp": "2026-04-24T23:49:36+00:00",
+          "value": 0.708
+        },
+        {
+          "timestamp": "2026-04-25T00:49:36+00:00",
+          "value": 0.714
+        },
+        {
+          "timestamp": "2026-04-25T01:49:36+00:00",
+          "value": 0.719
+        },
+        {
+          "timestamp": "2026-04-25T02:49:36+00:00",
+          "value": 0.724
+        },
+        {
+          "timestamp": "2026-04-25T03:49:36+00:00",
+          "value": 0.728
+        },
+        {
+          "timestamp": "2026-04-25T04:49:36+00:00",
+          "value": 0.732
+        },
+        {
+          "timestamp": "2026-04-25T05:49:36+00:00",
+          "value": 0.735
+        },
+        {
+          "timestamp": "2026-04-25T06:49:36+00:00",
+          "value": 0.74
+        },
+        {
+          "timestamp": "2026-04-25T07:49:36+00:00",
+          "value": 0.745
+        },
+        {
+          "timestamp": "2026-04-25T08:49:36+00:00",
+          "value": 0.751
+        },
+        {
+          "timestamp": "2026-04-25T09:49:36+00:00",
+          "value": 0.758
+        },
+        {
+          "timestamp": "2026-04-25T10:49:36+00:00",
+          "value": 0.766
+        },
+        {
+          "timestamp": "2026-04-25T11:49:36+00:00",
+          "value": 0.776
+        },
+        {
+          "timestamp": "2026-04-25T12:49:36+00:00",
+          "value": 0.787
+        },
+        {
+          "timestamp": "2026-04-25T13:49:36+00:00",
+          "value": 0.798
+        },
+        {
+          "timestamp": "2026-04-25T14:49:36+00:00",
+          "value": 0.811
+        }
+      ]
+    }
+  ],
+  "incidents": [
+    {
+      "id": "incident-000",
+      "timestamp": "2026-04-25T14:49:36+00:00",
+      "title": "auth_rewrite on /api/v1/users/{id}",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Inject tenant header and refresh bearer token from contract-backed auth policy."
+    },
+    {
+      "id": "incident-001",
+      "timestamp": "2026-04-25T14:47:36+00:00",
+      "title": "route_rewrite on /api/v1/users/{id}",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Rewrite request to the currently published versioned endpoint."
+    },
+    {
+      "id": "incident-002",
+      "timestamp": "2026-04-25T14:45:36+00:00",
+      "title": "payload_rewrite on /api/v1/customers",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Coerce invalid field types and append missing required attributes."
+    },
+    {
+      "id": "incident-003",
+      "timestamp": "2026-04-25T14:43:36+00:00",
+      "title": "retry_with_backoff on /api/v1/orders",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Honor retry-after signal and replay with exponential backoff."
+    },
+    {
+      "id": "incident-004",
+      "timestamp": "2026-04-25T14:41:36+00:00",
+      "title": "combined_rewrite on /api/v1/events/ingest",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Map payload to the latest schema and remove retired fields."
+    },
+    {
+      "id": "incident-005",
+      "timestamp": "2026-04-25T14:39:36+00:00",
+      "title": "combined_rewrite on /api/v1/events/ingest",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Map payload to the latest schema and remove retired fields."
+    },
+    {
+      "id": "incident-006",
+      "timestamp": "2026-04-25T14:37:36+00:00",
+      "title": "payload_rewrite on /api/v1/tokens/refresh",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Coerce invalid field types and append missing required attributes."
+    },
+    {
+      "id": "incident-007",
+      "timestamp": "2026-04-25T14:35:36+00:00",
+      "title": "route_rewrite on /api/v1/customers",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Rewrite request to the currently published versioned endpoint."
+    },
+    {
+      "id": "incident-008",
+      "timestamp": "2026-04-25T14:33:36+00:00",
+      "title": "payload_rewrite on /api/v1/orders",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Coerce invalid field types and append missing required attributes."
+    },
+    {
+      "id": "incident-009",
+      "timestamp": "2026-04-25T14:31:36+00:00",
+      "title": "combined_rewrite on /api/v1/events/ingest",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Map payload to the latest schema and remove retired fields."
+    }
+  ],
+  "generated_at": "2026-04-25T14:49:36+00:00"
+}

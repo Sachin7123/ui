@@ -1,0 +1,1485 @@
+{
+  "policy_version": "v4.7.2",
+  "trainer": "hf_trl_structured_policy",
+  "last_updated": "2026-04-25T14:49:36+00:00",
+  "reward_curve": [
+    {
+      "step": 1,
+      "reward": 0.231,
+      "baseline": 0.311,
+      "adaptive": 0.632,
+      "trained": 0.42,
+      "win_rate": 0.484
+    },
+    {
+      "step": 2,
+      "reward": 0.242,
+      "baseline": 0.312,
+      "adaptive": 0.635,
+      "trained": 0.429,
+      "win_rate": 0.488
+    },
+    {
+      "step": 3,
+      "reward": 0.252,
+      "baseline": 0.313,
+      "adaptive": 0.637,
+      "trained": 0.438,
+      "win_rate": 0.492
+    },
+    {
+      "step": 4,
+      "reward": 0.263,
+      "baseline": 0.314,
+      "adaptive": 0.64,
+      "trained": 0.447,
+      "win_rate": 0.496
+    },
+    {
+      "step": 5,
+      "reward": 0.273,
+      "baseline": 0.315,
+      "adaptive": 0.642,
+      "trained": 0.456,
+      "win_rate": 0.5
+    },
+    {
+      "step": 6,
+      "reward": 0.283,
+      "baseline": 0.316,
+      "adaptive": 0.644,
+      "trained": 0.464,
+      "win_rate": 0.504
+    },
+    {
+      "step": 7,
+      "reward": 0.293,
+      "baseline": 0.316,
+      "adaptive": 0.645,
+      "trained": 0.471,
+      "win_rate": 0.508
+    },
+    {
+      "step": 8,
+      "reward": 0.302,
+      "baseline": 0.317,
+      "adaptive": 0.647,
+      "trained": 0.478,
+      "win_rate": 0.512
+    },
+    {
+      "step": 9,
+      "reward": 0.311,
+      "baseline": 0.318,
+      "adaptive": 0.648,
+      "trained": 0.484,
+      "win_rate": 0.516
+    },
+    {
+      "step": 10,
+      "reward": 0.32,
+      "baseline": 0.318,
+      "adaptive": 0.649,
+      "trained": 0.49,
+      "win_rate": 0.52
+    },
+    {
+      "step": 11,
+      "reward": 0.328,
+      "baseline": 0.319,
+      "adaptive": 0.65,
+      "trained": 0.495,
+      "win_rate": 0.524
+    },
+    {
+      "step": 12,
+      "reward": 0.336,
+      "baseline": 0.319,
+      "adaptive": 0.65,
+      "trained": 0.499,
+      "win_rate": 0.528
+    },
+    {
+      "step": 13,
+      "reward": 0.343,
+      "baseline": 0.32,
+      "adaptive": 0.65,
+      "trained": 0.502,
+      "win_rate": 0.532
+    },
+    {
+      "step": 14,
+      "reward": 0.35,
+      "baseline": 0.32,
+      "adaptive": 0.65,
+      "trained": 0.505,
+      "win_rate": 0.536
+    },
+    {
+      "step": 15,
+      "reward": 0.357,
+      "baseline": 0.32,
+      "adaptive": 0.649,
+      "trained": 0.507,
+      "win_rate": 0.54
+    },
+    {
+      "step": 16,
+      "reward": 0.363,
+      "baseline": 0.32,
+      "adaptive": 0.648,
+      "trained": 0.509,
+      "win_rate": 0.544
+    },
+    {
+      "step": 17,
+      "reward": 0.369,
+      "baseline": 0.32,
+      "adaptive": 0.647,
+      "trained": 0.511,
+      "win_rate": 0.548
+    },
+    {
+      "step": 18,
+      "reward": 0.375,
+      "baseline": 0.32,
+      "adaptive": 0.646,
+      "trained": 0.513,
+      "win_rate": 0.552
+    },
+    {
+      "step": 19,
+      "reward": 0.38,
+      "baseline": 0.319,
+      "adaptive": 0.644,
+      "trained": 0.514,
+      "win_rate": 0.556
+    },
+    {
+      "step": 20,
+      "reward": 0.386,
+      "baseline": 0.319,
+      "adaptive": 0.642,
+      "trained": 0.515,
+      "win_rate": 0.56
+    },
+    {
+      "step": 21,
+      "reward": 0.391,
+      "baseline": 0.319,
+      "adaptive": 0.64,
+      "trained": 0.517,
+      "win_rate": 0.564
+    },
+    {
+      "step": 22,
+      "reward": 0.396,
+      "baseline": 0.318,
+      "adaptive": 0.638,
+      "trained": 0.518,
+      "win_rate": 0.568
+    },
+    {
+      "step": 23,
+      "reward": 0.401,
+      "baseline": 0.317,
+      "adaptive": 0.635,
+      "trained": 0.521,
+      "win_rate": 0.572
+    },
+    {
+      "step": 24,
+      "reward": 0.406,
+      "baseline": 0.317,
+      "adaptive": 0.633,
+      "trained": 0.523,
+      "win_rate": 0.576
+    },
+    {
+      "step": 25,
+      "reward": 0.412,
+      "baseline": 0.316,
+      "adaptive": 0.63,
+      "trained": 0.526,
+      "win_rate": 0.58
+    },
+    {
+      "step": 26,
+      "reward": 0.417,
+      "baseline": 0.315,
+      "adaptive": 0.628,
+      "trained": 0.53,
+      "win_rate": 0.584
+    },
+    {
+      "step": 27,
+      "reward": 0.423,
+      "baseline": 0.314,
+      "adaptive": 0.625,
+      "trained": 0.534,
+      "win_rate": 0.588
+    },
+    {
+      "step": 28,
+      "reward": 0.429,
+      "baseline": 0.313,
+      "adaptive": 0.623,
+      "trained": 0.539,
+      "win_rate": 0.592
+    },
+    {
+      "step": 29,
+      "reward": 0.435,
+      "baseline": 0.312,
+      "adaptive": 0.621,
+      "trained": 0.545,
+      "win_rate": 0.596
+    },
+    {
+      "step": 30,
+      "reward": 0.442,
+      "baseline": 0.311,
+      "adaptive": 0.619,
+      "trained": 0.551,
+      "win_rate": 0.6
+    },
+    {
+      "step": 31,
+      "reward": 0.449,
+      "baseline": 0.31,
+      "adaptive": 0.617,
+      "trained": 0.558,
+      "win_rate": 0.604
+    },
+    {
+      "step": 32,
+      "reward": 0.456,
+      "baseline": 0.309,
+      "adaptive": 0.615,
+      "trained": 0.566,
+      "win_rate": 0.608
+    },
+    {
+      "step": 33,
+      "reward": 0.464,
+      "baseline": 0.308,
+      "adaptive": 0.613,
+      "trained": 0.574,
+      "win_rate": 0.612
+    },
+    {
+      "step": 34,
+      "reward": 0.472,
+      "baseline": 0.307,
+      "adaptive": 0.612,
+      "trained": 0.583,
+      "win_rate": 0.616
+    },
+    {
+      "step": 35,
+      "reward": 0.481,
+      "baseline": 0.306,
+      "adaptive": 0.611,
+      "trained": 0.592,
+      "win_rate": 0.62
+    },
+    {
+      "step": 36,
+      "reward": 0.49,
+      "baseline": 0.306,
+      "adaptive": 0.61,
+      "trained": 0.601,
+      "win_rate": 0.624
+    },
+    {
+      "step": 37,
+      "reward": 0.499,
+      "baseline": 0.305,
+      "adaptive": 0.61,
+      "trained": 0.611,
+      "win_rate": 0.628
+    },
+    {
+      "step": 38,
+      "reward": 0.509,
+      "baseline": 0.304,
+      "adaptive": 0.61,
+      "trained": 0.62,
+      "win_rate": 0.632
+    },
+    {
+      "step": 39,
+      "reward": 0.519,
+      "baseline": 0.303,
+      "adaptive": 0.61,
+      "trained": 0.63,
+      "win_rate": 0.636
+    },
+    {
+      "step": 40,
+      "reward": 0.529,
+      "baseline": 0.302,
+      "adaptive": 0.611,
+      "trained": 0.639,
+      "win_rate": 0.64
+    },
+    {
+      "step": 41,
+      "reward": 0.54,
+      "baseline": 0.302,
+      "adaptive": 0.612,
+      "trained": 0.649,
+      "win_rate": 0.644
+    },
+    {
+      "step": 42,
+      "reward": 0.55,
+      "baseline": 0.301,
+      "adaptive": 0.613,
+      "trained": 0.657,
+      "win_rate": 0.648
+    },
+    {
+      "step": 43,
+      "reward": 0.561,
+      "baseline": 0.301,
+      "adaptive": 0.614,
+      "trained": 0.666,
+      "win_rate": 0.652
+    },
+    {
+      "step": 44,
+      "reward": 0.572,
+      "baseline": 0.3,
+      "adaptive": 0.616,
+      "trained": 0.674,
+      "win_rate": 0.656
+    },
+    {
+      "step": 45,
+      "reward": 0.583,
+      "baseline": 0.3,
+      "adaptive": 0.618,
+      "trained": 0.681,
+      "win_rate": 0.66
+    },
+    {
+      "step": 46,
+      "reward": 0.594,
+      "baseline": 0.3,
+      "adaptive": 0.62,
+      "trained": 0.688,
+      "win_rate": 0.664
+    },
+    {
+      "step": 47,
+      "reward": 0.604,
+      "baseline": 0.3,
+      "adaptive": 0.622,
+      "trained": 0.693,
+      "win_rate": 0.668
+    },
+    {
+      "step": 48,
+      "reward": 0.615,
+      "baseline": 0.3,
+      "adaptive": 0.624,
+      "trained": 0.699,
+      "win_rate": 0.672
+    },
+    {
+      "step": 49,
+      "reward": 0.625,
+      "baseline": 0.3,
+      "adaptive": 0.627,
+      "trained": 0.703,
+      "win_rate": 0.676
+    },
+    {
+      "step": 50,
+      "reward": 0.635,
+      "baseline": 0.3,
+      "adaptive": 0.629,
+      "trained": 0.707,
+      "win_rate": 0.68
+    },
+    {
+      "step": 51,
+      "reward": 0.645,
+      "baseline": 0.301,
+      "adaptive": 0.632,
+      "trained": 0.71,
+      "win_rate": 0.684
+    },
+    {
+      "step": 52,
+      "reward": 0.654,
+      "baseline": 0.301,
+      "adaptive": 0.634,
+      "trained": 0.713,
+      "win_rate": 0.688
+    },
+    {
+      "step": 53,
+      "reward": 0.663,
+      "baseline": 0.302,
+      "adaptive": 0.637,
+      "trained": 0.715,
+      "win_rate": 0.692
+    },
+    {
+      "step": 54,
+      "reward": 0.672,
+      "baseline": 0.302,
+      "adaptive": 0.639,
+      "trained": 0.717,
+      "win_rate": 0.696
+    },
+    {
+      "step": 55,
+      "reward": 0.68,
+      "baseline": 0.303,
+      "adaptive": 0.641,
+      "trained": 0.719,
+      "win_rate": 0.7
+    },
+    {
+      "step": 56,
+      "reward": 0.688,
+      "baseline": 0.304,
+      "adaptive": 0.643,
+      "trained": 0.72,
+      "win_rate": 0.704
+    },
+    {
+      "step": 57,
+      "reward": 0.695,
+      "baseline": 0.304,
+      "adaptive": 0.645,
+      "trained": 0.722,
+      "win_rate": 0.708
+    },
+    {
+      "step": 58,
+      "reward": 0.702,
+      "baseline": 0.305,
+      "adaptive": 0.646,
+      "trained": 0.723,
+      "win_rate": 0.712
+    },
+    {
+      "step": 59,
+      "reward": 0.709,
+      "baseline": 0.306,
+      "adaptive": 0.648,
+      "trained": 0.725,
+      "win_rate": 0.716
+    },
+    {
+      "step": 60,
+      "reward": 0.715,
+      "baseline": 0.307,
+      "adaptive": 0.649,
+      "trained": 0.726,
+      "win_rate": 0.72
+    },
+    {
+      "step": 61,
+      "reward": 0.721,
+      "baseline": 0.308,
+      "adaptive": 0.649,
+      "trained": 0.729,
+      "win_rate": 0.724
+    },
+    {
+      "step": 62,
+      "reward": 0.727,
+      "baseline": 0.309,
+      "adaptive": 0.65,
+      "trained": 0.731,
+      "win_rate": 0.728
+    },
+    {
+      "step": 63,
+      "reward": 0.732,
+      "baseline": 0.31,
+      "adaptive": 0.65,
+      "trained": 0.735,
+      "win_rate": 0.732
+    },
+    {
+      "step": 64,
+      "reward": 0.738,
+      "baseline": 0.311,
+      "adaptive": 0.65,
+      "trained": 0.738,
+      "win_rate": 0.736
+    },
+    {
+      "step": 65,
+      "reward": 0.743,
+      "baseline": 0.312,
+      "adaptive": 0.649,
+      "trained": 0.743,
+      "win_rate": 0.74
+    },
+    {
+      "step": 66,
+      "reward": 0.748,
+      "baseline": 0.313,
+      "adaptive": 0.648,
+      "trained": 0.748,
+      "win_rate": 0.744
+    },
+    {
+      "step": 67,
+      "reward": 0.753,
+      "baseline": 0.314,
+      "adaptive": 0.647,
+      "trained": 0.754,
+      "win_rate": 0.748
+    },
+    {
+      "step": 68,
+      "reward": 0.758,
+      "baseline": 0.315,
+      "adaptive": 0.646,
+      "trained": 0.76,
+      "win_rate": 0.752
+    },
+    {
+      "step": 69,
+      "reward": 0.764,
+      "baseline": 0.316,
+      "adaptive": 0.644,
+      "trained": 0.768,
+      "win_rate": 0.756
+    },
+    {
+      "step": 70,
+      "reward": 0.769,
+      "baseline": 0.317,
+      "adaptive": 0.642,
+      "trained": 0.775,
+      "win_rate": 0.76
+    },
+    {
+      "step": 71,
+      "reward": 0.775,
+      "baseline": 0.317,
+      "adaptive": 0.64,
+      "trained": 0.784,
+      "win_rate": 0.764
+    },
+    {
+      "step": 72,
+      "reward": 0.781,
+      "baseline": 0.318,
+      "adaptive": 0.638,
+      "trained": 0.793,
+      "win_rate": 0.768
+    },
+    {
+      "step": 73,
+      "reward": 0.787,
+      "baseline": 0.319,
+      "adaptive": 0.636,
+      "trained": 0.802,
+      "win_rate": 0.772
+    },
+    {
+      "step": 74,
+      "reward": 0.794,
+      "baseline": 0.319,
+      "adaptive": 0.633,
+      "trained": 0.811,
+      "win_rate": 0.776
+    },
+    {
+      "step": 75,
+      "reward": 0.801,
+      "baseline": 0.319,
+      "adaptive": 0.631,
+      "trained": 0.821,
+      "win_rate": 0.78
+    },
+    {
+      "step": 76,
+      "reward": 0.808,
+      "baseline": 0.32,
+      "adaptive": 0.628,
+      "trained": 0.831,
+      "win_rate": 0.784
+    },
+    {
+      "step": 77,
+      "reward": 0.816,
+      "baseline": 0.32,
+      "adaptive": 0.626,
+      "trained": 0.84,
+      "win_rate": 0.788
+    },
+    {
+      "step": 78,
+      "reward": 0.824,
+      "baseline": 0.32,
+      "adaptive": 0.624,
+      "trained": 0.85,
+      "win_rate": 0.792
+    },
+    {
+      "step": 79,
+      "reward": 0.833,
+      "baseline": 0.32,
+      "adaptive": 0.621,
+      "trained": 0.859,
+      "win_rate": 0.796
+    },
+    {
+      "step": 80,
+      "reward": 0.842,
+      "baseline": 0.32,
+      "adaptive": 0.619,
+      "trained": 0.867,
+      "win_rate": 0.8
+    }
+  ],
+  "loss_curve": [
+    {
+      "step": 1,
+      "loss": 1.134
+    },
+    {
+      "step": 2,
+      "loss": 1.128
+    },
+    {
+      "step": 3,
+      "loss": 1.121
+    },
+    {
+      "step": 4,
+      "loss": 1.114
+    },
+    {
+      "step": 5,
+      "loss": 1.105
+    },
+    {
+      "step": 6,
+      "loss": 1.096
+    },
+    {
+      "step": 7,
+      "loss": 1.086
+    },
+    {
+      "step": 8,
+      "loss": 1.074
+    },
+    {
+      "step": 9,
+      "loss": 1.061
+    },
+    {
+      "step": 10,
+      "loss": 1.047
+    },
+    {
+      "step": 11,
+      "loss": 1.032
+    },
+    {
+      "step": 12,
+      "loss": 1.016
+    },
+    {
+      "step": 13,
+      "loss": 0.999
+    },
+    {
+      "step": 14,
+      "loss": 0.982
+    },
+    {
+      "step": 15,
+      "loss": 0.964
+    },
+    {
+      "step": 16,
+      "loss": 0.946
+    },
+    {
+      "step": 17,
+      "loss": 0.928
+    },
+    {
+      "step": 18,
+      "loss": 0.911
+    },
+    {
+      "step": 19,
+      "loss": 0.894
+    },
+    {
+      "step": 20,
+      "loss": 0.877
+    },
+    {
+      "step": 21,
+      "loss": 0.862
+    },
+    {
+      "step": 22,
+      "loss": 0.847
+    },
+    {
+      "step": 23,
+      "loss": 0.834
+    },
+    {
+      "step": 24,
+      "loss": 0.822
+    },
+    {
+      "step": 25,
+      "loss": 0.811
+    },
+    {
+      "step": 26,
+      "loss": 0.801
+    },
+    {
+      "step": 27,
+      "loss": 0.793
+    },
+    {
+      "step": 28,
+      "loss": 0.785
+    },
+    {
+      "step": 29,
+      "loss": 0.778
+    },
+    {
+      "step": 30,
+      "loss": 0.772
+    },
+    {
+      "step": 31,
+      "loss": 0.766
+    },
+    {
+      "step": 32,
+      "loss": 0.759
+    },
+    {
+      "step": 33,
+      "loss": 0.753
+    },
+    {
+      "step": 34,
+      "loss": 0.747
+    },
+    {
+      "step": 35,
+      "loss": 0.74
+    },
+    {
+      "step": 36,
+      "loss": 0.732
+    },
+    {
+      "step": 37,
+      "loss": 0.723
+    },
+    {
+      "step": 38,
+      "loss": 0.713
+    },
+    {
+      "step": 39,
+      "loss": 0.702
+    },
+    {
+      "step": 40,
+      "loss": 0.69
+    },
+    {
+      "step": 41,
+      "loss": 0.676
+    },
+    {
+      "step": 42,
+      "loss": 0.662
+    },
+    {
+      "step": 43,
+      "loss": 0.646
+    },
+    {
+      "step": 44,
+      "loss": 0.63
+    },
+    {
+      "step": 45,
+      "loss": 0.612
+    },
+    {
+      "step": 46,
+      "loss": 0.595
+    },
+    {
+      "step": 47,
+      "loss": 0.577
+    },
+    {
+      "step": 48,
+      "loss": 0.559
+    },
+    {
+      "step": 49,
+      "loss": 0.541
+    },
+    {
+      "step": 50,
+      "loss": 0.524
+    },
+    {
+      "step": 51,
+      "loss": 0.507
+    },
+    {
+      "step": 52,
+      "loss": 0.491
+    },
+    {
+      "step": 53,
+      "loss": 0.476
+    },
+    {
+      "step": 54,
+      "loss": 0.463
+    },
+    {
+      "step": 55,
+      "loss": 0.45
+    },
+    {
+      "step": 56,
+      "loss": 0.439
+    },
+    {
+      "step": 57,
+      "loss": 0.428
+    },
+    {
+      "step": 58,
+      "loss": 0.419
+    },
+    {
+      "step": 59,
+      "loss": 0.411
+    },
+    {
+      "step": 60,
+      "loss": 0.404
+    },
+    {
+      "step": 61,
+      "loss": 0.397
+    },
+    {
+      "step": 62,
+      "loss": 0.391
+    },
+    {
+      "step": 63,
+      "loss": 0.385
+    },
+    {
+      "step": 64,
+      "loss": 0.379
+    },
+    {
+      "step": 65,
+      "loss": 0.373
+    },
+    {
+      "step": 66,
+      "loss": 0.366
+    },
+    {
+      "step": 67,
+      "loss": 0.358
+    },
+    {
+      "step": 68,
+      "loss": 0.35
+    },
+    {
+      "step": 69,
+      "loss": 0.34
+    },
+    {
+      "step": 70,
+      "loss": 0.33
+    },
+    {
+      "step": 71,
+      "loss": 0.318
+    },
+    {
+      "step": 72,
+      "loss": 0.305
+    },
+    {
+      "step": 73,
+      "loss": 0.291
+    },
+    {
+      "step": 74,
+      "loss": 0.276
+    },
+    {
+      "step": 75,
+      "loss": 0.26
+    },
+    {
+      "step": 76,
+      "loss": 0.243
+    },
+    {
+      "step": 77,
+      "loss": 0.225
+    },
+    {
+      "step": 78,
+      "loss": 0.207
+    },
+    {
+      "step": 79,
+      "loss": 0.189
+    },
+    {
+      "step": 80,
+      "loss": 0.171
+    }
+  ],
+  "success_curve": [
+    {
+      "step": 1,
+      "baseline": 0.541,
+      "adaptive": 0.822,
+      "trained": 0.614
+    },
+    {
+      "step": 2,
+      "baseline": 0.542,
+      "adaptive": 0.823,
+      "trained": 0.618
+    },
+    {
+      "step": 3,
+      "baseline": 0.543,
+      "adaptive": 0.825,
+      "trained": 0.623
+    },
+    {
+      "step": 4,
+      "baseline": 0.544,
+      "adaptive": 0.826,
+      "trained": 0.627
+    },
+    {
+      "step": 5,
+      "baseline": 0.545,
+      "adaptive": 0.828,
+      "trained": 0.631
+    },
+    {
+      "step": 6,
+      "baseline": 0.546,
+      "adaptive": 0.829,
+      "trained": 0.635
+    },
+    {
+      "step": 7,
+      "baseline": 0.546,
+      "adaptive": 0.831,
+      "trained": 0.639
+    },
+    {
+      "step": 8,
+      "baseline": 0.547,
+      "adaptive": 0.832,
+      "trained": 0.642
+    },
+    {
+      "step": 9,
+      "baseline": 0.548,
+      "adaptive": 0.833,
+      "trained": 0.646
+    },
+    {
+      "step": 10,
+      "baseline": 0.548,
+      "adaptive": 0.833,
+      "trained": 0.649
+    },
+    {
+      "step": 11,
+      "baseline": 0.549,
+      "adaptive": 0.834,
+      "trained": 0.653
+    },
+    {
+      "step": 12,
+      "baseline": 0.549,
+      "adaptive": 0.835,
+      "trained": 0.656
+    },
+    {
+      "step": 13,
+      "baseline": 0.55,
+      "adaptive": 0.835,
+      "trained": 0.659
+    },
+    {
+      "step": 14,
+      "baseline": 0.55,
+      "adaptive": 0.835,
+      "trained": 0.662
+    },
+    {
+      "step": 15,
+      "baseline": 0.55,
+      "adaptive": 0.835,
+      "trained": 0.665
+    },
+    {
+      "step": 16,
+      "baseline": 0.55,
+      "adaptive": 0.835,
+      "trained": 0.667
+    },
+    {
+      "step": 17,
+      "baseline": 0.55,
+      "adaptive": 0.834,
+      "trained": 0.67
+    },
+    {
+      "step": 18,
+      "baseline": 0.55,
+      "adaptive": 0.834,
+      "trained": 0.672
+    },
+    {
+      "step": 19,
+      "baseline": 0.549,
+      "adaptive": 0.833,
+      "trained": 0.674
+    },
+    {
+      "step": 20,
+      "baseline": 0.549,
+      "adaptive": 0.832,
+      "trained": 0.676
+    },
+    {
+      "step": 21,
+      "baseline": 0.549,
+      "adaptive": 0.831,
+      "trained": 0.678
+    },
+    {
+      "step": 22,
+      "baseline": 0.548,
+      "adaptive": 0.83,
+      "trained": 0.68
+    },
+    {
+      "step": 23,
+      "baseline": 0.547,
+      "adaptive": 0.828,
+      "trained": 0.682
+    },
+    {
+      "step": 24,
+      "baseline": 0.547,
+      "adaptive": 0.827,
+      "trained": 0.683
+    },
+    {
+      "step": 25,
+      "baseline": 0.546,
+      "adaptive": 0.825,
+      "trained": 0.685
+    },
+    {
+      "step": 26,
+      "baseline": 0.545,
+      "adaptive": 0.824,
+      "trained": 0.687
+    },
+    {
+      "step": 27,
+      "baseline": 0.544,
+      "adaptive": 0.822,
+      "trained": 0.689
+    },
+    {
+      "step": 28,
+      "baseline": 0.543,
+      "adaptive": 0.82,
+      "trained": 0.69
+    },
+    {
+      "step": 29,
+      "baseline": 0.542,
+      "adaptive": 0.819,
+      "trained": 0.692
+    },
+    {
+      "step": 30,
+      "baseline": 0.541,
+      "adaptive": 0.817,
+      "trained": 0.694
+    },
+    {
+      "step": 31,
+      "baseline": 0.54,
+      "adaptive": 0.816,
+      "trained": 0.696
+    },
+    {
+      "step": 32,
+      "baseline": 0.539,
+      "adaptive": 0.814,
+      "trained": 0.698
+    },
+    {
+      "step": 33,
+      "baseline": 0.538,
+      "adaptive": 0.812,
+      "trained": 0.701
+    },
+    {
+      "step": 34,
+      "baseline": 0.537,
+      "adaptive": 0.811,
+      "trained": 0.703
+    },
+    {
+      "step": 35,
+      "baseline": 0.536,
+      "adaptive": 0.81,
+      "trained": 0.706
+    },
+    {
+      "step": 36,
+      "baseline": 0.536,
+      "adaptive": 0.809,
+      "trained": 0.708
+    },
+    {
+      "step": 37,
+      "baseline": 0.535,
+      "adaptive": 0.808,
+      "trained": 0.711
+    },
+    {
+      "step": 38,
+      "baseline": 0.534,
+      "adaptive": 0.807,
+      "trained": 0.714
+    },
+    {
+      "step": 39,
+      "baseline": 0.533,
+      "adaptive": 0.806,
+      "trained": 0.717
+    },
+    {
+      "step": 40,
+      "baseline": 0.532,
+      "adaptive": 0.806,
+      "trained": 0.72
+    },
+    {
+      "step": 41,
+      "baseline": 0.532,
+      "adaptive": 0.805,
+      "trained": 0.724
+    },
+    {
+      "step": 42,
+      "baseline": 0.531,
+      "adaptive": 0.805,
+      "trained": 0.727
+    },
+    {
+      "step": 43,
+      "baseline": 0.531,
+      "adaptive": 0.805,
+      "trained": 0.731
+    },
+    {
+      "step": 44,
+      "baseline": 0.53,
+      "adaptive": 0.805,
+      "trained": 0.735
+    },
+    {
+      "step": 45,
+      "baseline": 0.53,
+      "adaptive": 0.806,
+      "trained": 0.739
+    },
+    {
+      "step": 46,
+      "baseline": 0.53,
+      "adaptive": 0.806,
+      "trained": 0.743
+    },
+    {
+      "step": 47,
+      "baseline": 0.53,
+      "adaptive": 0.807,
+      "trained": 0.747
+    },
+    {
+      "step": 48,
+      "baseline": 0.53,
+      "adaptive": 0.808,
+      "trained": 0.751
+    },
+    {
+      "step": 49,
+      "baseline": 0.53,
+      "adaptive": 0.809,
+      "trained": 0.755
+    },
+    {
+      "step": 50,
+      "baseline": 0.53,
+      "adaptive": 0.81,
+      "trained": 0.76
+    },
+    {
+      "step": 51,
+      "baseline": 0.531,
+      "adaptive": 0.811,
+      "trained": 0.764
+    },
+    {
+      "step": 52,
+      "baseline": 0.531,
+      "adaptive": 0.813,
+      "trained": 0.768
+    },
+    {
+      "step": 53,
+      "baseline": 0.532,
+      "adaptive": 0.814,
+      "trained": 0.772
+    },
+    {
+      "step": 54,
+      "baseline": 0.532,
+      "adaptive": 0.816,
+      "trained": 0.777
+    },
+    {
+      "step": 55,
+      "baseline": 0.533,
+      "adaptive": 0.817,
+      "trained": 0.781
+    },
+    {
+      "step": 56,
+      "baseline": 0.534,
+      "adaptive": 0.819,
+      "trained": 0.785
+    },
+    {
+      "step": 57,
+      "baseline": 0.534,
+      "adaptive": 0.821,
+      "trained": 0.788
+    },
+    {
+      "step": 58,
+      "baseline": 0.535,
+      "adaptive": 0.822,
+      "trained": 0.792
+    },
+    {
+      "step": 59,
+      "baseline": 0.536,
+      "adaptive": 0.824,
+      "trained": 0.796
+    },
+    {
+      "step": 60,
+      "baseline": 0.537,
+      "adaptive": 0.826,
+      "trained": 0.799
+    },
+    {
+      "step": 61,
+      "baseline": 0.538,
+      "adaptive": 0.827,
+      "trained": 0.803
+    },
+    {
+      "step": 62,
+      "baseline": 0.539,
+      "adaptive": 0.829,
+      "trained": 0.806
+    },
+    {
+      "step": 63,
+      "baseline": 0.54,
+      "adaptive": 0.83,
+      "trained": 0.809
+    },
+    {
+      "step": 64,
+      "baseline": 0.541,
+      "adaptive": 0.831,
+      "trained": 0.812
+    },
+    {
+      "step": 65,
+      "baseline": 0.542,
+      "adaptive": 0.832,
+      "trained": 0.815
+    },
+    {
+      "step": 66,
+      "baseline": 0.543,
+      "adaptive": 0.833,
+      "trained": 0.817
+    },
+    {
+      "step": 67,
+      "baseline": 0.544,
+      "adaptive": 0.834,
+      "trained": 0.82
+    },
+    {
+      "step": 68,
+      "baseline": 0.545,
+      "adaptive": 0.834,
+      "trained": 0.822
+    },
+    {
+      "step": 69,
+      "baseline": 0.546,
+      "adaptive": 0.835,
+      "trained": 0.824
+    },
+    {
+      "step": 70,
+      "baseline": 0.547,
+      "adaptive": 0.835,
+      "trained": 0.826
+    },
+    {
+      "step": 71,
+      "baseline": 0.547,
+      "adaptive": 0.835,
+      "trained": 0.828
+    },
+    {
+      "step": 72,
+      "baseline": 0.548,
+      "adaptive": 0.835,
+      "trained": 0.83
+    },
+    {
+      "step": 73,
+      "baseline": 0.549,
+      "adaptive": 0.835,
+      "trained": 0.832
+    },
+    {
+      "step": 74,
+      "baseline": 0.549,
+      "adaptive": 0.834,
+      "trained": 0.834
+    },
+    {
+      "step": 75,
+      "baseline": 0.549,
+      "adaptive": 0.833,
+      "trained": 0.835
+    },
+    {
+      "step": 76,
+      "baseline": 0.55,
+      "adaptive": 0.832,
+      "trained": 0.837
+    },
+    {
+      "step": 77,
+      "baseline": 0.55,
+      "adaptive": 0.831,
+      "trained": 0.839
+    },
+    {
+      "step": 78,
+      "baseline": 0.55,
+      "adaptive": 0.83,
+      "trained": 0.841
+    },
+    {
+      "step": 79,
+      "baseline": 0.55,
+      "adaptive": 0.829,
+      "trained": 0.843
+    },
+    {
+      "step": 80,
+      "baseline": 0.55,
+      "adaptive": 0.828,
+      "trained": 0.845
+    }
+  ],
+  "summary_cards": [
+    {
+      "id": "train-win",
+      "label": "Trained Policy Win Rate",
+      "value": "76.4%",
+      "delta": "+11.2 pts",
+      "direction": "up",
+      "hint": "Compared to frozen baseline policy"
+    },
+    {
+      "id": "reward-peak",
+      "label": "Peak Reward",
+      "value": "0.88",
+      "delta": "+0.19",
+      "direction": "up",
+      "hint": "Best evaluation reward over held-out episodes"
+    },
+    {
+      "id": "loss-final",
+      "label": "Final Loss",
+      "value": "0.12",
+      "delta": "-0.96",
+      "direction": "down",
+      "hint": "Cross-episode structured action loss"
+    },
+    {
+      "id": "abstain-precision",
+      "label": "Safe Abstain Precision",
+      "value": "97.1%",
+      "delta": "+4.0 pts",
+      "direction": "up",
+      "hint": "Unrecoverable auth scenarios handled safely"
+    }
+  ]
+}

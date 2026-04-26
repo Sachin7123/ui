@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="remorph-bg" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4F8CFF" />
+      <stop offset="0.58" stop-color="#8B5CF6" />
+      <stop offset="1" stop-color="#22D3EE" />
+    </linearGradient>
+    <radialGradient id="remorph-core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 66) rotate(90) scale(36 36)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.92" />
+      <stop offset="0.45" stop-color="#DDE7FF" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#B6CCFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect x="10" y="10" width="108" height="108" rx="28" fill="#090A12" />
+  <rect x="12" y="12" width="104" height="104" rx="26" fill="url(#remorph-bg)" />
+  <rect x="16" y="16" width="96" height="96" rx="22" fill="#0A0D19" fill-opacity="0.82" />
+  <circle cx="64" cy="64" r="32" fill="url(#remorph-core)" />
+  <circle cx="64" cy="64" r="22" stroke="#8EC5FF" stroke-opacity="0.9" stroke-width="2.5" />
+  <circle cx="64" cy="64" r="12" fill="#EAF2FF" fill-opacity="0.95" />
+  <path d="M44 80V48h11.5c7.2 0 12 4.2 12 10.3 0 5.9-4.8 10.1-12 10.1H50V80H44Zm6-16.9h5.2c4 0 6.5-1.9 6.5-4.9 0-3.1-2.5-5-6.5-5H50v9.9Z" fill="#FFFFFF" fill-opacity="0.96"/>
+</svg>

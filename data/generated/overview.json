@@ -1,0 +1,199 @@
+{
+  "headline": "Your APIs heal themselves.",
+  "tagline": "AI-powered detection, repair, retry, telemetry, and policy learning for drift-prone production APIs.",
+  "stats": [
+    {
+      "id": "requests",
+      "label": "Requests Today",
+      "value": "52,381",
+      "delta": "+12.4%",
+      "direction": "up",
+      "hint": "Global request volume across production regions"
+    },
+    {
+      "id": "failures",
+      "label": "Failures Detected",
+      "value": "1,428",
+      "delta": "-4.2%",
+      "direction": "down",
+      "hint": "Drift, auth, payload, and transient edge failures"
+    },
+    {
+      "id": "healed",
+      "label": "Auto-Healed",
+      "value": "1,173",
+      "delta": "+9.8%",
+      "direction": "up",
+      "hint": "Requests repaired without operator intervention"
+    },
+    {
+      "id": "success",
+      "label": "Success Rate",
+      "value": "82.1%",
+      "delta": "+3.1 pts",
+      "direction": "up",
+      "hint": "Adaptive policy win rate on detected failures"
+    },
+    {
+      "id": "hours",
+      "label": "Hours Saved",
+      "value": "314h",
+      "delta": "+27h",
+      "direction": "up",
+      "hint": "Estimated incident-response time reclaimed"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "incident-000",
+      "timestamp": "2026-04-25T14:49:36+00:00",
+      "title": "auth_rewrite on /api/v1/users/{id}",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Inject tenant header and refresh bearer token from contract-backed auth policy."
+    },
+    {
+      "id": "incident-001",
+      "timestamp": "2026-04-25T14:47:36+00:00",
+      "title": "route_rewrite on /api/v1/users/{id}",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Rewrite request to the currently published versioned endpoint."
+    },
+    {
+      "id": "incident-002",
+      "timestamp": "2026-04-25T14:45:36+00:00",
+      "title": "payload_rewrite on /api/v1/customers",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Coerce invalid field types and append missing required attributes."
+    },
+    {
+      "id": "incident-003",
+      "timestamp": "2026-04-25T14:43:36+00:00",
+      "title": "retry_with_backoff on /api/v1/orders",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Honor retry-after signal and replay with exponential backoff."
+    },
+    {
+      "id": "incident-004",
+      "timestamp": "2026-04-25T14:41:36+00:00",
+      "title": "combined_rewrite on /api/v1/events/ingest",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Map payload to the latest schema and remove retired fields."
+    },
+    {
+      "id": "incident-005",
+      "timestamp": "2026-04-25T14:39:36+00:00",
+      "title": "combined_rewrite on /api/v1/events/ingest",
+      "detail": "Replayed request completed successfully",
+      "level": "medium",
+      "action": "Map payload to the latest schema and remove retired fields."
+    }
+  ],
+  "reward_trend": {
+    "id": "reward",
+    "label": "Reward score",
+    "color": "#38bdf8",
+    "points": [
+      {
+        "timestamp": "2026-04-24T15:49:36+00:00",
+        "value": 0.62
+      },
+      {
+        "timestamp": "2026-04-24T16:49:36+00:00",
+        "value": 0.634
+      },
+      {
+        "timestamp": "2026-04-24T17:49:36+00:00",
+        "value": 0.647
+      },
+      {
+        "timestamp": "2026-04-24T18:49:36+00:00",
+        "value": 0.66
+      },
+      {
+        "timestamp": "2026-04-24T19:49:36+00:00",
+        "value": 0.672
+      },
+      {
+        "timestamp": "2026-04-24T20:49:36+00:00",
+        "value": 0.683
+      },
+      {
+        "timestamp": "2026-04-24T21:49:36+00:00",
+        "value": 0.692
+      },
+      {
+        "timestamp": "2026-04-24T22:49:36+00:00",
+        "value": 0.701
+      },
+      {
+        "timestamp": "2026-04-24T23:49:36+00:00",
+        "value": 0.708
+      },
+      {
+        "timestamp": "2026-04-25T00:49:36+00:00",
+        "value": 0.714
+      },
+      {
+        "timestamp": "2026-04-25T01:49:36+00:00",
+        "value": 0.719
+      },
+      {
+        "timestamp": "2026-04-25T02:49:36+00:00",
+        "value": 0.724
+      },
+      {
+        "timestamp": "2026-04-25T03:49:36+00:00",
+        "value": 0.728
+      },
+      {
+        "timestamp": "2026-04-25T04:49:36+00:00",
+        "value": 0.732
+      },
+      {
+        "timestamp": "2026-04-25T05:49:36+00:00",
+        "value": 0.735
+      },
+      {
+        "timestamp": "2026-04-25T06:49:36+00:00",
+        "value": 0.74
+      },
+      {
+        "timestamp": "2026-04-25T07:49:36+00:00",
+        "value": 0.745
+      },
+      {
+        "timestamp": "2026-04-25T08:49:36+00:00",
+        "value": 0.751
+      },
+      {
+        "timestamp": "2026-04-25T09:49:36+00:00",
+        "value": 0.758
+      },
+      {
+        "timestamp": "2026-04-25T10:49:36+00:00",
+        "value": 0.766
+      },
+      {
+        "timestamp": "2026-04-25T11:49:36+00:00",
+        "value": 0.776
+      },
+      {
+        "timestamp": "2026-04-25T12:49:36+00:00",
+        "value": 0.787
+      },
+      {
+        "timestamp": "2026-04-25T13:49:36+00:00",
+        "value": 0.798
+      },
+      {
+        "timestamp": "2026-04-25T14:49:36+00:00",
+        "value": 0.811
+      }
+    ]
+  }
+}

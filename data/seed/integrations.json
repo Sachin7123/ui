@@ -1,0 +1,93 @@
+[
+  {
+    "id": "integration-0",
+    "name": "FastAPI",
+    "category": "Framework",
+    "status": "Ready",
+    "setup_time": "5 min",
+    "description": "Connect ReMorph healing workflows to FastAPI APIs and contract telemetry.",
+    "features": [
+      "Schema-aware retries",
+      "Telemetry export",
+      "Policy-driven recovery"
+    ]
+  },
+  {
+    "id": "integration-1",
+    "name": "Flask",
+    "category": "Framework",
+    "status": "Ready",
+    "setup_time": "7 min",
+    "description": "Connect ReMorph healing workflows to Flask APIs and contract telemetry.",
+    "features": [
+      "Schema-aware retries",
+      "Telemetry export",
+      "Policy-driven recovery"
+    ]
+  },
+  {
+    "id": "integration-2",
+    "name": "Express",
+    "category": "Framework",
+    "status": "Ready",
+    "setup_time": "9 min",
+    "description": "Connect ReMorph healing workflows to Express APIs and contract telemetry.",
+    "features": [
+      "Schema-aware retries",
+      "Telemetry export",
+      "Policy-driven recovery"
+    ]
+  },
+  {
+    "id": "integration-3",
+    "name": "Django",
+    "category": "Framework",
+    "status": "Ready",
+    "setup_time": "11 min",
+    "description": "Connect ReMorph healing workflows to Django APIs and contract telemetry.",
+    "features": [
+      "Schema-aware retries",
+      "Telemetry export",
+      "Policy-driven recovery"
+    ]
+  },
+  {
+    "id": "integration-4",
+    "name": "OpenAPI",
+    "category": "Contract",
+    "status": "Ready",
+    "setup_time": "13 min",
+    "description": "Connect ReMorph healing workflows to OpenAPI APIs and contract telemetry.",
+    "features": [
+      "Schema-aware retries",
+      "Telemetry export",
+      "Policy-driven recovery"
+    ]
+  },
+  {
+    "id": "integration-5",
+    "name": "AWS",
+    "category": "Cloud",
+    "status": "Ready",
+    "setup_time": "15 min",
+    "description": "Connect ReMorph healing workflows to AWS APIs and contract telemetry.",
+    "features": [
+      "Schema-aware retries",
+      "Telemetry export",
+      "Policy-driven recovery"
+    ]
+  },
+  {
+    "id": "integration-6",
+    "name": "GCP",
+    "category": "Cloud",
+    "status": "Ready",
+    "setup_time": "17 min",
+    "description": "Connect ReMorph healing workflows to GCP APIs and contract telemetry.",
+    "features": [
+      "Schema-aware retries",
+      "Telemetry export",
+      "Policy-driven recovery"
+    ]
+  }
+]

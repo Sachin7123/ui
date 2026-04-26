@@ -1,0 +1,36 @@
+{
+  "summary_cards": [
+    {
+      "id": "train-win",
+      "label": "Trained Policy Win Rate",
+      "value": "76.4%",
+      "delta": "+11.2 pts",
+      "direction": "up",
+      "hint": "Compared to frozen baseline policy"
+    },
+    {
+      "id": "reward-peak",
+      "label": "Peak Reward",
+      "value": "0.88",
+      "delta": "+0.19",
+      "direction": "up",
+      "hint": "Best evaluation reward over held-out episodes"
+    },
+    {
+      "id": "loss-final",
+      "label": "Final Loss",
+      "value": "0.12",
+      "delta": "-0.96",
+      "direction": "down",
+      "hint": "Cross-episode structured action loss"
+    },
+    {
+      "id": "abstain-precision",
+      "label": "Safe Abstain Precision",
+      "value": "97.1%",
+      "delta": "+4.0 pts",
+      "direction": "up",
+      "hint": "Unrecoverable auth scenarios handled safely"
+    }
+  ]
+}

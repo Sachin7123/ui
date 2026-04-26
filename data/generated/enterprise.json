@@ -1,0 +1,210 @@
+{
+  "members": [
+    {
+      "id": "member-0",
+      "name": "Ava Shah",
+      "role": "Platform Lead",
+      "team": "Core",
+      "status": "online",
+      "last_active": "2026-04-25T14:49:36+00:00"
+    },
+    {
+      "id": "member-1",
+      "name": "Noah Kim",
+      "role": "ML Engineer",
+      "team": "Training",
+      "status": "online",
+      "last_active": "2026-04-25T14:38:36+00:00"
+    },
+    {
+      "id": "member-2",
+      "name": "Mila Patel",
+      "role": "SRE",
+      "team": "Reliability",
+      "status": "online",
+      "last_active": "2026-04-25T14:27:36+00:00"
+    },
+    {
+      "id": "member-3",
+      "name": "Arjun Rao",
+      "role": "Security",
+      "team": "Security",
+      "status": "online",
+      "last_active": "2026-04-25T14:16:36+00:00"
+    },
+    {
+      "id": "member-4",
+      "name": "Liam Chen",
+      "role": "Backend",
+      "team": "Platform",
+      "status": "online",
+      "last_active": "2026-04-25T14:05:36+00:00"
+    },
+    {
+      "id": "member-5",
+      "name": "Sara Khan",
+      "role": "Product",
+      "team": "Growth",
+      "status": "idle",
+      "last_active": "2026-04-25T13:54:36+00:00"
+    },
+    {
+      "id": "member-6",
+      "name": "Ivy Lin",
+      "role": "Solutions",
+      "team": "Enterprise",
+      "status": "idle",
+      "last_active": "2026-04-25T13:43:36+00:00"
+    },
+    {
+      "id": "member-7",
+      "name": "Zara Ali",
+      "role": "Finance",
+      "team": "Ops",
+      "status": "idle",
+      "last_active": "2026-04-25T13:32:36+00:00"
+    }
+  ],
+  "api_keys": [
+    {
+      "id": "key-0",
+      "name": "prod-gateway-1",
+      "scope": "read:telemetry",
+      "last_used": "2026-04-25T14:49:36+00:00",
+      "status": "active"
+    },
+    {
+      "id": "key-1",
+      "name": "prod-gateway-2",
+      "scope": "repair:execute",
+      "last_used": "2026-04-25T08:49:36+00:00",
+      "status": "active"
+    },
+    {
+      "id": "key-2",
+      "name": "prod-gateway-3",
+      "scope": "admin:org",
+      "last_used": "2026-04-25T02:49:36+00:00",
+      "status": "active"
+    },
+    {
+      "id": "key-3",
+      "name": "prod-gateway-4",
+      "scope": "billing:read",
+      "last_used": "2026-04-24T20:49:36+00:00",
+      "status": "active"
+    },
+    {
+      "id": "key-4",
+      "name": "prod-gateway-5",
+      "scope": "audit:read",
+      "last_used": "2026-04-24T14:49:36+00:00",
+      "status": "rotating"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "audit-0",
+      "timestamp": "2026-04-25T14:49:36+00:00",
+      "actor": "Ava Shah",
+      "action": "Reviewed abstain event",
+      "resource": "workspace/prod",
+      "outcome": "logged"
+    },
+    {
+      "id": "audit-1",
+      "timestamp": "2026-04-25T14:35:36+00:00",
+      "actor": "Noah Kim",
+      "action": "Reviewed abstain event",
+      "resource": "workspace/prod",
+      "outcome": "logged"
+    },
+    {
+      "id": "audit-2",
+      "timestamp": "2026-04-25T14:21:36+00:00",
+      "actor": "Mila Patel",
+      "action": "Rotated API key",
+      "resource": "org/acme-payments",
+      "outcome": "approved"
+    },
+    {
+      "id": "audit-3",
+      "timestamp": "2026-04-25T14:07:36+00:00",
+      "actor": "Arjun Rao",
+      "action": "Reviewed abstain event",
+      "resource": "org/acme-payments",
+      "outcome": "success"
+    },
+    {
+      "id": "audit-4",
+      "timestamp": "2026-04-25T13:53:36+00:00",
+      "actor": "Liam Chen",
+      "action": "Created policy rollout",
+      "resource": "org/acme-payments",
+      "outcome": "success"
+    },
+    {
+      "id": "audit-5",
+      "timestamp": "2026-04-25T13:39:36+00:00",
+      "actor": "Sara Khan",
+      "action": "Reviewed abstain event",
+      "resource": "workspace/prod",
+      "outcome": "approved"
+    },
+    {
+      "id": "audit-6",
+      "timestamp": "2026-04-25T13:25:36+00:00",
+      "actor": "Ivy Lin",
+      "action": "Created policy rollout",
+      "resource": "org/acme-payments",
+      "outcome": "approved"
+    },
+    {
+      "id": "audit-7",
+      "timestamp": "2026-04-25T13:11:36+00:00",
+      "actor": "Zara Ali",
+      "action": "Created policy rollout",
+      "resource": "key/prod-gateway-2",
+      "outcome": "success"
+    },
+    {
+      "id": "audit-8",
+      "timestamp": "2026-04-25T12:57:36+00:00",
+      "actor": "Ava Shah",
+      "action": "Created policy rollout",
+      "resource": "policy/v4.7.2",
+      "outcome": "success"
+    },
+    {
+      "id": "audit-9",
+      "timestamp": "2026-04-25T12:43:36+00:00",
+      "actor": "Noah Kim",
+      "action": "Changed routing rule",
+      "resource": "workspace/prod",
+      "outcome": "logged"
+    },
+    {
+      "id": "audit-10",
+      "timestamp": "2026-04-25T12:29:36+00:00",
+      "actor": "Mila Patel",
+      "action": "Created policy rollout",
+      "resource": "key/prod-gateway-2",
+      "outcome": "logged"
+    },
+    {
+      "id": "audit-11",
+      "timestamp": "2026-04-25T12:15:36+00:00",
+      "actor": "Arjun Rao",
+      "action": "Changed routing rule",
+      "resource": "workspace/prod",
+      "outcome": "approved"
+    }
+  ],
+  "billing": {
+    "plan_name": "Enterprise Annual",
+    "monthly_spend": "$18,420",
+    "projected_savings": "$41,300",
+    "seat_count": 32,
+    "request_budget_utilization": 0.74
+  }
+}

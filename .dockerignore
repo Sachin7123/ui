@@ -1,0 +1,11 @@
+node_modules
+frontend/node_modules
+frontend/out
+frontend/.next
+backend/.pytest_cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db

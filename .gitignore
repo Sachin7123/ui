@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Next.js
+frontend/.next/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Local runtime / DB (regenerated locally)
+data/runtime/
+
+# Env / secrets
+.env
+.env.*
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
