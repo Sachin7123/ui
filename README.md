@@ -1,6 +1,19 @@
+---
+title: Remorph Observability
+emoji: 🐠
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 # ReMorph Observability Platform
 
+**Live demo (Hugging Face Space):** https://huggingface.co/spaces/sachin0789/remorph-observability
+
 Startup-grade Hugging Face Spaces demo for ReMorph that shows real-time AI training observability, live anomaly detection, prompt/output inspection, and repair-linked API healing telemetry in one product.
+
+Space README metadata: [Spaces config reference](https://huggingface.co/docs/hub/spaces-config-reference).
 
 ## Stack
 
@@ -26,7 +39,7 @@ Startup-grade Hugging Face Spaces demo for ReMorph that shows real-time AI train
 | Training with HF TRL (reference script) | `remorph-openenv-submission/scripts/train_trl_grpo.py` (local deps: `pip install -r remorph-openenv-submission/requirements.txt` then `pip install -r remorph-openenv-submission/requirements-training.txt`) |
 | Colab notebook (Unsloth or TRL) | *Add your notebook URL here after publishing* |
 | Mini-blog or short (under 2 min) video | *Add Hugging Face post / YouTube URL here* |
-| Hugging Face Space (this app) | *Add your `https://huggingface.co/spaces/...` URL here* |
+| Hugging Face Space (this app) | https://huggingface.co/spaces/sachin0789/remorph-observability |
 | Reward / loss evidence | Shipped JSON: `remorph-openenv-submission/artifacts/submission/training_run/reward_history.json`, `loss_history.json`; telemetry: `artifacts/submission/telemetry/rollouts.jsonl` |
 
 **Re-vendor artifacts** after you re-train (keeps the Docker image self-contained):
