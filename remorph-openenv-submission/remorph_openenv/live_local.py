@@ -8,7 +8,6 @@ from urllib.parse import urlsplit
 
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
-from fastapi.testclient import TestClient
 
 from remorph_openenv.models import PolicyAction
 from remorph_openenv.scenarios import ScenarioSpec
@@ -190,7 +189,7 @@ class LiveLocalServiceHarness:
         for client in self._clients.values():
             client.close()
 
-    def _client_for_path(self, path: str) -> TestClient:
+    def _client_for_path(self, path: str) -> Any:
         service = _service_name_from_path(path)
         if service not in self._clients:
             raise ValueError(f"Unsupported live_local service path: {path}")
