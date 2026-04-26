@@ -13,7 +13,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PORT=7860 \
     DATA_SOURCE_MODE=openenv \
-    REMORPH_OPENENV_SUBMISSION_PATH=/app/remorph-openenv-submission
+    REMORPH_OPENENV_SUBMISSION_PATH=/app/remorph-openenv-submission \
+    PYTHONPATH=/app/backend:/app/remorph-openenv-submission
 
 WORKDIR /app
 

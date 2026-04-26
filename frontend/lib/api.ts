@@ -209,6 +209,21 @@ export type SystemHealthResponse = {
   alerts_open: number;
 };
 
+export type OpenEnvMetaResponse = {
+  name: string;
+  environment_ready: boolean;
+  import_error: string | null;
+  submission_path: string | null;
+  description: string;
+};
+
+export type OpenEnvStepResponse = {
+  observation: Record<string, unknown>;
+  reward: number;
+  done: boolean;
+  info: Record<string, unknown>;
+};
+
 function getApiBaseUrl(): string {
   const configuredBase = process.env.NEXT_PUBLIC_API_BASE_URL?.trim();
   if (configuredBase) {
@@ -231,6 +246,20 @@ export async function fetchJson<T>(path: string): Promise<T> {
   const response = await fetch(buildApiUrl(path), { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Request failed: ${response.status}`);
+  }
+  return (await response.json()) as T;
+}
+
+export async function fetchJsonPost<T>(path: string, body: unknown): Promise<T> {
+  const response = await fetch(buildApiUrl(path), {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+    cache: "no-store",
+  });
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Request failed: ${response.status} ${text}`);
   }
   return (await response.json()) as T;
 }

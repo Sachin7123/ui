@@ -103,6 +103,7 @@ Primary checkout (example):
 ## Product Routes
 
 - `/` executive observability landing
+- `/openenv` **OpenEnv playground** — interactive `reset` / `step` on `ReMorphEnvironment` (Gradio-free judge demo)
 - `/command-center` live training command center
 - `/analytics` historical analytics
 - `/inspector` prompt / output inspector

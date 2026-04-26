@@ -3,12 +3,15 @@ from __future__ import annotations
 import asyncio
 import json
 from pathlib import Path
+from typing import Annotated
 
-from fastapi import FastAPI, Query
+from fastapi import Body, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 
-from app.repositories.base import demo_root
+import os
+
+from app.repositories.base import demo_root, remorph_openenv_submission_dir
 from app.models import (
     IngestEventsRequest,
     IngestMetricsRequest,
@@ -16,7 +19,11 @@ from app.models import (
     IngestPromptsRequest,
     IngestRepairsRequest,
     IngestRewardsRequest,
+    OpenEnvMetaResponse,
+    OpenEnvResetBody,
+    OpenEnvStepBody,
 )
+from app.services import openenv_runtime
 from app.services.demo_service import DemoService
 
 app = FastAPI(title="ReMorph Observability Platform API", version="0.2.0")
@@ -121,6 +128,60 @@ def realtime_command_center():
 @app.get("/api/realtime/system-health")
 def realtime_system_health():
     return service.system_health()
+
+
+@app.get("/api/openenv/meta", response_model=OpenEnvMetaResponse)
+def openenv_meta():
+    ok, err = openenv_runtime.import_ok()
+    return OpenEnvMetaResponse(
+        name="remorph-openenv",
+        environment_ready=ok,
+        import_error=err,
+        submission_path=os.getenv("REMORPH_OPENENV_SUBMISSION_PATH", "").strip() or str(remorph_openenv_submission_dir()),
+        description="OpenEnv-compatible API repair / abstention environment (reset → step Gym-style API).",
+    )
+
+
+@app.post("/api/openenv/reset")
+def openenv_reset(
+    body: Annotated[OpenEnvResetBody, Body(default_factory=OpenEnvResetBody)],
+):
+    ok, err = openenv_runtime.import_ok()
+    if not ok:
+        raise HTTPException(
+            status_code=503,
+            detail={"message": "remorph_openenv not importable", "import_error": err},
+        )
+    try:
+        observation = openenv_runtime.reset(seed=body.seed, scenario_id=body.scenario_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return {"observation": observation}
+
+
+@app.post("/api/openenv/step")
+def openenv_step(body: OpenEnvStepBody):
+    ok, err = openenv_runtime.import_ok()
+    if not ok:
+        raise HTTPException(
+            status_code=503,
+            detail={"message": "remorph_openenv not importable", "import_error": err},
+        )
+    try:
+        return openenv_runtime.step(body.action)
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.get("/api/openenv/state")
+def openenv_state():
+    ok, err = openenv_runtime.import_ok()
+    if not ok:
+        raise HTTPException(
+            status_code=503,
+            detail={"message": "remorph_openenv not importable", "import_error": err},
+        )
+    return openenv_runtime.state()
 
 
 def _stream_channel(channel: str, once: bool = False):

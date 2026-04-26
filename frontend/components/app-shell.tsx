@@ -31,6 +31,17 @@ const navGroups: NavGroup[] = [
     ],
   },
   {
+    label: 'OpenEnv',
+    items: [
+      {
+        href: '/openenv',
+        label: 'Environment',
+        description: 'Reset / step playground',
+        icon: <IconChip />,
+      },
+    ],
+  },
+  {
     label: 'Live Surfaces',
     items: [
       {
@@ -234,6 +245,15 @@ function IconHome() {
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="m3 11 9-8 9 8" />
       <path d="M5 10v10h14V10" />
+    </svg>
+  );
+}
+
+function IconChip() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M7 7h10v10H7z" />
+      <path d="M7 3v2M17 3v2M7 19v2M17 19v2M3 7h2M3 17h2M19 7h2M19 17h2" />
     </svg>
   );
 }

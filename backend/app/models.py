@@ -253,3 +253,20 @@ class SystemHealthResponse(BaseModel):
     active_run_count: int
     queue_depth: int
     alerts_open: int
+
+
+class OpenEnvResetBody(BaseModel):
+    seed: int | None = None
+    scenario_id: str | None = None
+
+
+class OpenEnvStepBody(BaseModel):
+    action: dict[str, Any]
+
+
+class OpenEnvMetaResponse(BaseModel):
+    name: str
+    environment_ready: bool
+    import_error: str | None = None
+    submission_path: str | None = None
+    description: str

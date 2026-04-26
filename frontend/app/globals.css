@@ -3258,3 +3258,80 @@ button {
     )
     padding-box;
 }
+
+/* OpenEnv playground (/openenv) */
+.openenv-playground-grid {
+  align-items: start;
+}
+
+.openenv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.openenv-field-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.openenv-textarea {
+  width: 100%;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  resize: vertical;
+  min-height: 200px;
+}
+
+.openenv-presets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.openenv-mono {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 0.82em;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.openenv-json {
+  max-height: 420px;
+  overflow: auto;
+}
+
+.openenv-step-result {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 14px;
+}
+
+.openenv-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.openenv-info-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 8px 0;
+}

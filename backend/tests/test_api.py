@@ -63,6 +63,14 @@ class DemoApiTest(unittest.TestCase):
             payload = json.loads(first_line.removeprefix("data: "))
             self.assertEqual(payload["channel"], "metrics")
 
+    def test_openenv_meta(self) -> None:
+        response = self.client.get("/api/openenv/meta")
+        self.assertEqual(response.status_code, 200)
+        payload = response.json()
+        self.assertEqual(payload["name"], "remorph-openenv")
+        self.assertIn("environment_ready", payload)
+        self.assertIn("description", payload)
+
 
 if __name__ == "__main__":
     unittest.main()
