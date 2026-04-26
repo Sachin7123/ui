@@ -4,12 +4,19 @@ import json
 from pathlib import Path
 from typing import Any
 
-from app.repositories.base import project_root
+from app.repositories.base import project_root, remorph_openenv_submission_dir
 
 
 class ArtifactRepository:
     def __init__(self, repo_root: Path | None = None) -> None:
+        # repo_root kept for backward compatibility; artifact paths use OpenEnv submission layout.
         self._repo_root = repo_root or project_root()
+
+    def _submission_root(self) -> Path:
+        return remorph_openenv_submission_dir()
+
+    def _artifacts_submission(self) -> Path:
+        return self._submission_root() / "artifacts" / "submission"
 
     def runtime_summary(self) -> dict[str, Any]:
         path = self._repo_root / "runtime" / "telemetry" / "healing_summary.json"
@@ -20,118 +27,49 @@ class ArtifactRepository:
         return self._read_jsonl(path)[:limit]
 
     def submission_training_summary(self) -> dict[str, Any]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "training_summary.json"
-        )
+        path = self._artifacts_submission() / "training_run" / "training_summary.json"
         return self._read_json(path)
 
     def submission_reward_history(self) -> list[dict[str, Any]]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "reward_history.json"
-        )
+        path = self._artifacts_submission() / "training_run" / "reward_history.json"
         return self._read_json(path, default=[])
 
     def submission_loss_history(self) -> list[dict[str, Any]]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "loss_history.json"
-        )
+        path = self._artifacts_submission() / "training_run" / "loss_history.json"
         return self._read_json(path, default=[])
 
     def submission_eval_summary(self) -> dict[str, Any]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "eval_summary.json"
-        )
+        path = self._artifacts_submission() / "training_run" / "eval_summary.json"
         return self._read_json(path)
 
     def submission_dataset_stats(self) -> dict[str, Any]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "dataset_stats.json"
-        )
+        path = self._artifacts_submission() / "training_run" / "dataset_stats.json"
         return self._read_json(path)
 
     def submission_model_config(self) -> dict[str, Any]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "model_config.json"
-        )
+        path = self._artifacts_submission() / "training_run" / "model_config.json"
         return self._read_json(path)
 
     def submission_checkpoint_metadata(self) -> dict[str, Any]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "checkpoint_metadata.json"
-        )
+        path = self._artifacts_submission() / "training_run" / "checkpoint_metadata.json"
         return self._read_json(path)
 
     def submission_trl_dataset(self, *, limit: int | None = 6) -> list[dict[str, Any]]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "training_run"
-            / "trl_dataset.jsonl"
-        )
+        path = self._artifacts_submission() / "training_run" / "trl_dataset.jsonl"
         rows = self._read_jsonl(path)
         if limit is None:
             return rows
         return rows[:limit]
 
     def submission_rollouts(self, *, limit: int | None = None) -> list[dict[str, Any]]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "telemetry"
-            / "rollouts.jsonl"
-        )
+        path = self._artifacts_submission() / "telemetry" / "rollouts.jsonl"
         rows = self._read_jsonl(path)
         if limit is None:
             return rows
         return rows[:limit]
 
     def benchmark_report(self) -> dict[str, Any]:
-        path = (
-            self._repo_root
-            / "remorph-openenv-submission"
-            / "artifacts"
-            / "submission"
-            / "benchmark_report.json"
-        )
+        path = self._artifacts_submission() / "benchmark_report.json"
         return self._read_json(path)
 
     def eval_topline(self) -> dict[str, Any]:

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 
@@ -30,3 +31,27 @@ def database_path() -> Path:
 
 def event_log_path() -> Path:
     return runtime_root() / "event_stream.jsonl"
+
+
+def remorph_openenv_submission_dir() -> Path:
+    """Root of the OpenEnv submission package (contains `openenv.yaml` and `artifacts/`).
+
+    Resolution order:
+    1. `REMORPH_OPENENV_SUBMISSION_PATH` — absolute path to the `remorph-openenv-submission` folder
+    2. `remorph-openenv-submission/` next to this demo repo (vendored copy for Hugging Face Spaces)
+    3. `remorph-openenv-submission/` under `project_root()` (monorepo / sibling checkout)
+    """
+
+    override = os.getenv("REMORPH_OPENENV_SUBMISSION_PATH", "").strip()
+    if override:
+        return Path(override).expanduser().resolve()
+
+    embedded = demo_root() / "remorph-openenv-submission"
+    if embedded.is_dir() and (embedded / "openenv.yaml").is_file():
+        return embedded.resolve()
+
+    sibling = project_root() / "remorph-openenv-submission"
+    if sibling.is_dir() and (sibling / "openenv.yaml").is_file():
+        return sibling.resolve()
+
+    return embedded.resolve()

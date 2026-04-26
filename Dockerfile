@@ -11,7 +11,9 @@ FROM python:3.12-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PORT=7860
+    PORT=7860 \
+    DATA_SOURCE_MODE=openenv \
+    REMORPH_OPENENV_SUBMISSION_PATH=/app/remorph-openenv-submission
 
 WORKDIR /app
 
@@ -20,6 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY backend ./backend
 COPY data ./data
+COPY remorph-openenv-submission /app/remorph-openenv-submission
 COPY --from=frontend-builder /build/frontend/out ./static
 
 WORKDIR /app/backend

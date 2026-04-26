@@ -8,7 +8,34 @@ Startup-grade Hugging Face Spaces demo for ReMorph that shows real-time AI train
 - `FastAPI` backend API
 - local `SQLite` persistence plus append-only JSONL event logs
 - in-process high-frequency simulator with SSE streaming
-- artifact-aware integration with the sibling `ReMorph` repository
+- **OpenEnv** submission (`remorph-openenv-submission/`) vendored for Hugging Face Spaces and hackathon judging
+- artifact-aware integration: prefers the vendored tree, then `REMORPH_OPENENV_SUBMISSION_PATH`, then a sibling checkout
+
+## OpenEnv Hackathon (India 2026) — submission map
+
+**Problem / theme:** **Theme 3.1 — Professional tasks (world modeling with tools & APIs).** ReMorph simulates a partially observable API surface where drift (routes, payloads, auth) must be diagnosed and repaired or safely abstained from—closer to real integration work than toy grid worlds.
+
+**What judges open on the Space:** the same observability product as local: landing, **Command Center** (live SSE, reward/repair narrative), **Analytics** (curves from your training run JSON), **Inspector**, **Alerts**, **ReMorph Engine**.
+
+**Minimum requirements (checklist — fill links before you submit):**
+
+| Requirement | Where it lives in this repo |
+| --- | --- |
+| OpenEnv-compliant manifest | `remorph-openenv-submission/openenv.yaml` |
+| Environment implementation | `remorph-openenv-submission/remorph_openenv/environment.py` (`ReMorphEnvironment`) |
+| Training with HF TRL (reference script) | `remorph-openenv-submission/scripts/train_trl_grpo.py` (local deps: `pip install -r remorph-openenv-submission/requirements.txt` then `pip install -r remorph-openenv-submission/requirements-training.txt`) |
+| Colab notebook (Unsloth or TRL) | *Add your notebook URL here after publishing* |
+| Mini-blog or short (under 2 min) video | *Add Hugging Face post / YouTube URL here* |
+| Hugging Face Space (this app) | *Add your `https://huggingface.co/spaces/...` URL here* |
+| Reward / loss evidence | Shipped JSON: `remorph-openenv-submission/artifacts/submission/training_run/reward_history.json`, `loss_history.json`; telemetry: `artifacts/submission/telemetry/rollouts.jsonl` |
+
+**Re-vendor artifacts** after you re-train (keeps the Docker image self-contained):
+
+```powershell
+.\scripts\sync_openenv_vendor.ps1
+```
+
+Optional: set `REMORPH_OPENENV_VENDOR_SRC` to the absolute path of your full `remorph-openenv-submission` checkout if it is not next to `remorph-demo`.
 
 ## Local Development
 
@@ -31,7 +58,9 @@ The built frontend is exported to `frontend/out/`. The FastAPI app serves those 
 
 ## Docker / Hugging Face Spaces
 
-This demo is designed for a Docker Space.
+This demo is designed for a **Docker** Space. The image sets `DATA_SOURCE_MODE=openenv` and `REMORPH_OPENENV_SUBMISSION_PATH=/app/remorph-openenv-submission` so the UI boots from the vendored OpenEnv artifacts without an external monorepo.
+
+**Create the Space:** New Space → Docker → connect the GitHub repo that contains this folder as the repository root → ensure the **Dockerfile** path is the default `Dockerfile` → build.
 
 Build and run locally:
 
@@ -46,15 +75,17 @@ The container serves:
 - backend APIs on `/api/*`
 - healthcheck on `/health`
 
-## Project Location
+## Project layout
 
-This demo is intended to live as a separate project at:
+Primary checkout (example):
 
 - `D:\HF\remorph-demo`
 
-It reads real ReMorph artifacts from the sibling repo at:
+**OpenEnv data resolution** (first match wins):
 
-- `D:\HF\ReMorph`
+1. `REMORPH_OPENENV_SUBMISSION_PATH` — absolute path to a `remorph-openenv-submission` directory (contains `openenv.yaml` + `artifacts/`)
+2. `remorph-demo/remorph-openenv-submission/` — vendored copy (used on Hugging Face)
+3. `{project_root}/remorph-openenv-submission/` — e.g. sibling monorepo under `D:\HF\ReMorph` when that tree exists locally
 
 ## Product Routes
 
@@ -94,8 +125,8 @@ Current implementation uses:
 - local SQLite database at `data/runtime/observability.db`
 - append-only JSONL event log at `data/runtime/event_stream.jsonl`
 - live in-process simulator that writes runs, metrics, prompts, outputs, rewards, alerts, and repairs
-- sibling ReMorph artifacts from `../ReMorph/remorph-openenv-submission/artifacts/submission/training_run/*`
-- sibling ReMorph runtime telemetry from `../ReMorph/runtime/*`
+- OpenEnv submission artifacts under `remorph-openenv-submission/artifacts/submission/...` (vendored or overridden by `REMORPH_OPENENV_SUBMISSION_PATH`)
+- optional sibling runtime telemetry from `{project_root}/runtime/*` when present (e.g. local ReMorph monorepo)
 
 The backend is structured so these can later be replaced by:
 
@@ -200,7 +231,7 @@ To prove the product is reading real ReMorph artifacts:
 
 1. Open `http://127.0.0.1:7860/api/pipeline/repairs`
 2. Confirm one of the stats reflects sibling runtime/training artifact values
-3. Open `D:\HF\ReMorph\runtime` or `D:\HF\ReMorph\remorph-openenv-submission\artifacts\submission\training_run`
+3. Open `remorph-demo\remorph-openenv-submission\artifacts\submission\training_run` (or your `REMORPH_OPENENV_SUBMISSION_PATH` tree)
 4. Refresh the repairs endpoint after updating artifact data
 5. Confirm the stat changes after restart
 
